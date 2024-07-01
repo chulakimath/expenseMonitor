@@ -1,0 +1,41 @@
+.active :first-child{
+ box-shadow: 0px 0px 8px black;
+ transition: all;
+ transition-delay: 500;
+  animation:  rotate 1s ease-in-out;
+  animation:  sclz 1s ease-in-out;
+}
+.opcty{
+    animation: opctying 1s ease-in-out;
+}
+@keyframes opctying {
+    0%{
+        opacity: 0;
+        scale: 0;
+        margin-top: -100px;
+    }
+ 
+    100%{
+        opacity: 1;
+        scale: 1;
+        margin-top: 8px;
+    }
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+ 
+@keyframes sclz {
+    0%{
+        scale: 1.1;
+    }
+    100%{
+        scale: 1;
+    }
+}
