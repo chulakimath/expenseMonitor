@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import { ExpenseContext } from "../context/ExpenseContext";
 import Table from '../table/Table';
 
+
 const Expense = () => {
   const { mainData, setMainData } = useContext(ExpenseContext);
   

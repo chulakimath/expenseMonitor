@@ -8,6 +8,18 @@
 .opcty{
     animation: opctying 1s ease-in-out;
 }
+.opcty2{
+    animation: opctying2 0.5s ease-in-out;
+}
+.opcty3{
+    animation: opctying3 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.expandz{
+    transition: all 0.5s ease-in-out;
+}
+
 @keyframes opctying {
     0%{
         opacity: 0;
@@ -19,6 +31,29 @@
         opacity: 1;
         scale: 1;
         margin-top: 8px;
+    }
+}
+@keyframes opctying2 {
+    0%{
+        scale: 0;
+        margin-top: -5%;
+    }
+ 
+    100%{
+        opacity: 1;
+        scale: 1;
+        margin-top: 5%;
+    }
+}
+@keyframes opctying3 {
+    0%{
+        scale: 0.9;
+        opacity: 0;
+    }
+ 
+    100%{
+        scale: 1;
+        opacity: 1;
     }
 }
 
