@@ -5,10 +5,8 @@ import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recha
 
 const Income = () => {
   const { mainData } = useContext(ExpenseContext);
-  let income = mainData.filter((item) => item.reason === '1')
-  let expense = mainData.filter((item) => item.reason === '2')
-
-  // console.log(incomedata);
+  let income =mainData&&mainData.filter((item) => item.reason === '1')
+  let expense = mainData&&mainData.filter((item) => item.reason === '2')
   return (
     <>
       <div className='md:grid md:grid-cols-12 place-items-center'>

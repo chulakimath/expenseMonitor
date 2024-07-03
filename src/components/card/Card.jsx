@@ -14,8 +14,6 @@ const Card = () => {
     });
     amount = income - expense;
     setLocalData(amount);
-
-
   }, [mainData])
   return (
     <div className='flex justify-center'>

@@ -109,7 +109,7 @@ const EntryForm = () => {
                         classes={"w-screen sm:w-[300px]"}
                     />
                     <div className=' mt-1 flex justify-center'>
-                        <input ref={dateRef} className='shadow-sm shadow-black outline-none w-screen sm:w-[300px]' type="date" name="date" />
+                        <input ref={dateRef} className='shadow-sm shadow-black outline-none w-screen sm:w-[300px] py-2' type="date" name="date" />
                     </div>
                     <div className=' mt-1 flex justify-center '>
                         <input className='shadow-sm shadow-black px-2 py-1  w-screen sm:w-[300px] ' type="submit" value="Add Transaction" />
