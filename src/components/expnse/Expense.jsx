@@ -12,7 +12,7 @@ const Expense = () => {
     setSearchData(mainData)
   }, [mainData])
   useEffect(() => {
-    setSearchData(mainData.filter(
+    setSearchData(mainData && mainData.filter(
       item => item.subject.toLowerCase().includes(search.toLocaleLowerCase()) ||
         item.date.includes(search) ||
         item.amount.includes(search)||
