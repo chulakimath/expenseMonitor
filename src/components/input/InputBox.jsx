@@ -2,7 +2,7 @@ import React from 'react';
 
 
 
-const InputBox=({type="text",placeHolder,eventHandler,value,name,classes=""}) => {
+const InputBox=({type="text",placeHolder,eventHandler=function(){},value,name,classes=""}) => {
     const ChangeHandle=(e)=>{
         eventHandler(e.target.value);
     }

@@ -1,76 +1,125 @@
-.active :first-child{
- box-shadow: 0px 0px 8px black;
- transition: all;
- transition-delay: 500;
-  animation:  rotate 1s ease-in-out;
-  animation:  sclz 1s ease-in-out;
+.active :first-child {
+    box-shadow: 0px 0px 8px black;
+    transition: all;
+    transition-delay: 500;
+    animation: rotate 1s ease-in-out;
+    animation: sclz 1s ease-in-out;
 }
-.opcty{
-    animation: opctying 1s ease-in-out;
+
+.opcty {
+    animation: opctying 0.5s ease-in-out;
 }
-.opcty2{
+
+.opcty2 {
     animation: opctying2 0.5s ease-in-out;
 }
-.opcty3{
+
+.opcty3 {
     animation: opctying3 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
 
-.expandz{
+.expandz {
     transition: all 0.5s ease-in-out;
 }
 
 @keyframes opctying {
-    0%{
+    0% {
         opacity: 0;
         scale: 0;
-        margin-top: -100px;
+        /* margin-top: -100px; */
     }
- 
-    100%{
+
+    100% {
         opacity: 1;
         scale: 1;
-        margin-top: 8px;
+        /* margin-top: 8px; */
     }
 }
+
 @keyframes opctying2 {
-    0%{
+    0% {
         scale: 0;
         margin-top: -5%;
     }
- 
-    100%{
+
+    100% {
         opacity: 1;
         scale: 1;
         margin-top: 5%;
     }
 }
+
 @keyframes opctying3 {
-    0%{
+    0% {
         scale: 0.9;
         opacity: 0;
     }
- 
-    100%{
+
+    100% {
         scale: 1;
         opacity: 1;
     }
 }
 
 @keyframes rotate {
-    0%{
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+
+    100% {
         transform: rotate(360deg);
     }
 }
- 
+
 @keyframes sclz {
-    0%{
+    0% {
         scale: 1.1;
     }
-    100%{
+
+    100% {
         scale: 1;
+    }
+}
+
+.hideScroll {
+    overflow-x: hidden;
+}
+
+.gradient_back {
+
+    animation: changebg 15s infinite linear;
+}
+
+@keyframes backgroundRotate {
+
+    0% {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 1.0;
+    }
+
+    100% {
+        opacity: 0.8;
+    }
+
+}
+
+
+@keyframes changebg {
+    0% {
+        background-color: rgb(33, 150, 243);
+    }
+
+    50% {
+        background-color: rgb(76, 175, 80);
+        /* Green */
+    }
+
+    100% {
+        background-color: rgb(33, 150, 243);
+        /* Blue */
     }
 }

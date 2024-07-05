@@ -2,6 +2,7 @@ import React from 'react';
 import { ExpenseContext } from '../context/ExpenseContext';
 import { useContext } from 'react';
 import { Bar, BarChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
+import '../../assets/customActiv.css'
 
 const Income = () => {
   const { mainData } = useContext(ExpenseContext);
@@ -9,7 +10,8 @@ const Income = () => {
   let expense = mainData&&mainData.filter((item) => item.reason === '2')
   return (
     <>
-      <div className='md:grid md:grid-cols-12 place-items-center'>
+
+      <div className='md:grid md:grid-cols-12 place-items-center hideScroll'>
         <span className='md:col-span-6'>
           <div className='w-screen sm:w-[450px] h-72 shadow shadow-black flex items-end justify-center m-1 relative'>
             <h1 className='absolute left-[50%] top-0 -translate-x-[50%] text-2xl '>Income</h1>

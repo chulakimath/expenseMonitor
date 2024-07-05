@@ -1,6 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import "../../assets/customActiv.css";
 import { ExpenseContext } from '../context/ExpenseContext';
+import '../../assets/customActiv.css'
 
 const Card = () => {
   const { mainData,} = useContext(ExpenseContext);
@@ -18,7 +19,7 @@ const Card = () => {
   return (
     <div className='flex justify-center'>
       <div
-        className='opcty relative mt-2 mb-3 backdrop-blur-3xl rounded-lg h-[180px] w-[300px] md:w[350px] bg-gradient-to-r from-purple-500/70 to-pink-500/70 shadow-md shadow-black' >
+        className='opcty relative mt-2 mb-3 backdrop-blur-3xl rounded-lg h-[180px] w-[300px] md:w[350px] gradient_back shadow-md shadow-black' >
         <span className='text-white text-5xl p-2 '>₹</span>
         <span className='text-white px-4 py-2 absolute top-0 right-0'>Available balance</span>
         <div className='pl-4 text-5xl text-black/60 mt-1 truncate '>

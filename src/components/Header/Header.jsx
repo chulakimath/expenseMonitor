@@ -6,7 +6,7 @@ const Header = () => {
     console.log("head");
     return (
         <>
-            <div className='bg-gray-600 text-white w-full py-2 text-2xl text-center'>
+            <div className='bg-gray-600 text-white w-full py-2 text-2xl'>
                 Expense Tracker
             </div>
             <div className='bg-gray-900/50 text-white py-3 px-2 hidden md:block'>
