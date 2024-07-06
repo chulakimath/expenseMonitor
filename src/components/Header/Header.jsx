@@ -3,7 +3,6 @@ import { Link, NavLink } from 'react-router-dom';
 
 
 const Header = () => {
-    console.log("head");
     return (
         <>
             <div className='bg-gray-600 text-white w-full py-2 text-2xl'>

@@ -20,10 +20,10 @@ const EntryForm = () => {
         if (selectedDate) {
             const formattedDate = formatDate(selectedDate);
             formData.append('date', formattedDate);
-          }
+        }
         const formObj = Object.fromEntries(formData.entries());
-        const id = Date.now() + Math.round(Math.random() * 100);
-        formObj.type=formObj.reason=="1"?"income":"expense";
+        const id = Math.round(Date.now());
+        formObj.type = formObj.reason == "1" ? "income" : "expense";
         formObj.id = id;
         if (formObj.reason == "" || formObj.date == "" || formObj.subject == "" || formObj.amount == "") {
             customtoster(3, 'Missing info')
@@ -44,8 +44,8 @@ const EntryForm = () => {
         const month = String(date.getMonth() + 1).padStart(2, '0'); // getMonth() is zero-based
         const year = date.getFullYear();
         return `${day}-${month}-${year}`;
-      };
-    
+    };
+
     const handleRest = () => {
         setAmount("");
         setSubject("");

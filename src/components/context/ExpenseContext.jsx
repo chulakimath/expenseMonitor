@@ -9,7 +9,6 @@ export const ExpenseProvider = ({ children }) => {
         const localStorageData = localStorage.getItem("ExpenseData");
         let data = JSON.parse(localStorageData)
         setMainData(data);
-        console.log("setMainData");
     }, []);
 
     return (

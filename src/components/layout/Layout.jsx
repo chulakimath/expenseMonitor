@@ -6,7 +6,6 @@ import Footer from '../footer/Footer';
 import {ExpenseProvider} from '../context/ExpenseContext';
 
 const Layout = () => {
-    console.log('layout');
     return (
         <>
             <ExpenseProvider>

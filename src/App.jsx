@@ -14,7 +14,6 @@ import { ExpenseProvider } from './components/context/ExpenseContext';
 
 const App = () => {
   const [data, setData] = useState(1);
-  console.log("app");
   return (
     <>
       <ExpenseProvider>
